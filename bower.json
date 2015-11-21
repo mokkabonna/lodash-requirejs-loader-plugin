@@ -1,0 +1,31 @@
+{
+  "name": "lodash-requirejs-loader-plugin",
+  "homepage": "https://github.com/mokkabonna/lodash-requirejs-loader-plugin",
+  "authors": [
+    "Martin Hansen <martin@martinhansen.no>"
+  ],
+  "description": "A requirejs loader for lodash amd modules. Prevents build bloat.",
+  "main": "main.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "requirejs",
+    "amd",
+    "plugin",
+    "lodash"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lodash": "3.10.1-amd",
+    "Squire.js": "squire#~0.2.0",
+    "bluebird": "~3.0.5"
+  }
+}
