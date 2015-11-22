@@ -1,5 +1,7 @@
 # lodash-requirejs-loader-plugin
 
+[![Build status](https://travis-ci.org/mokkabonna/lodash-requirejs-loader-plugin.png)](https://travis-ci.org/mokkabonna/lodash-requirejs-loader-plugin)
+
 A requirejs loader for lodash AMD modules. Prevents build bloat. Use what you need, include only those modules in your build.
 
 Just use it like this:
