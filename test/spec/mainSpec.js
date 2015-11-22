@@ -68,10 +68,11 @@ define([
         createContext(context);
       });
 
-      it('loads the just module', function() {
+      it('loads just the main module, and excluding others', function() {
         return loadOptimized('_!map,reduce', context).then(function(mod) {
           expect(mod.map).to.equal(_.map);
           expect(mod.reduce).to.equal(_.reduce);
+          expect(mod.flatten).not.to.equal(_.flatten);
         });
       });
 
