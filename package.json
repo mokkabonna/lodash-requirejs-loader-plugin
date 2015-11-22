@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "test": "gulp test",
     "develop": "./node_modules/karma/bin/karma start --auto-watch",
     "lint": "jshint src"
   },
