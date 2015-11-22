@@ -1,6 +1,6 @@
 # lodash-requirejs-loader-plugin
 
-A requirejs loader for lodash amd modules. Prevents build bloat. Use what you need, include only those modules in your build.
+A requirejs loader for lodash AMD modules. Prevents build bloat. Use what you need, include only those modules in your build.
 
 Just use it like this:
 
@@ -57,5 +57,5 @@ If you want to disable this optimization you can do so like this in your require
 ## All options
 
 - **devOptimizedLoad** If you want to load optimized (whole lodash) during development. default: *true*
-- **lodashLocation** The root path to the lodash amd package, default: *bower_components/lodash*
+- **lodashLocation** The root path to the lodash AMD package, default: *bower_components/lodash*
 - **overrides** Any overrides to the loader map you want to override or extend. Useful if you are using a newer version and this package isn't updated yet. Needs this format `overrides: { 'map' : 'collection/newLocationForMapModule', 'newModule': 'string/newModule' }`
