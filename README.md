@@ -36,7 +36,7 @@ Include it in your requirejs like this. (or use another name if you prefer)
 ```
 
 
-## Development optimalizations
+## Development optimizations
 
 During development we will load just `lodash` and create a custom lodash with the requested modules. This is so that we can load faster. When you run the requirejs optimizer only the requested modules will be included.
 
