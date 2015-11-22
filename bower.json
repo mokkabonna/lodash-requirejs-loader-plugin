@@ -1,6 +1,6 @@
 {
   "name": "lodash-requirejs-loader-plugin",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/mokkabonna/lodash-requirejs-loader-plugin",
   "authors": [
     "Martin Hansen <martin@martinhansen.no>"
