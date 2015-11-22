@@ -30,7 +30,7 @@ Include it in your requirejs like this. (or use another name if you prefer)
 ```js
 {
   paths: {
-    '_': 'bower_components/lodash-requirejs-loader-plugin/main'
+    '_': 'bower_components/lodash-requirejs-loader-plugin/src/main'
   }
 }
 ```
