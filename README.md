@@ -2,7 +2,6 @@
 
 A requirejs loader for lodash amd modules. Prevents build bloat. Use what you need, include only those modules in your build.
 
-
 Just use it like this:
 
 
@@ -14,6 +13,15 @@ define(['_!map,reduce,flatten'], function(_){
 
 });
 ```
+
+## Dependencies
+
+This has no bower dependency to lodash. So install what version you desire yourself. The reason is because the way lodash has tagged it's AMD build this package can't specify something like **lodash:^3.0.0-amd** Because that will install the non AMD version of lodash. And I don'w want to lock it down to a specific version, since that requires me to always update the map.
+
+The map is based on lodash 3.10.1-amd.
+
+See below for the **overrides** option to use with other versions of lodash.
+
 
 ## Configuration
 
