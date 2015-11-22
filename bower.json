@@ -5,7 +5,7 @@
   "authors": [
     "Martin Hansen <martin@martinhansen.no>"
   ],
-  "description": "A requirejs loader for lodash amd modules. Prevents build bloat.",
+  "description": "A requirejs loader for lodash AMD modules. Prevents build bloat. Use what you need, include only those modules in your build.",
   "main": "main.js",
   "moduleType": [
     "amd"
