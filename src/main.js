@@ -3,7 +3,7 @@ define(['module'], function(module) {
 
   var lodashMap = getMap();
   var config = module.config();
-  var lodashLocation = config.lodashLocation || 'bower_components/lodash';
+  var lodashPackageName = config.lodashPackageName || 'lodash';
   var devOptimizedLoad = config.hasOwnProperty('devOptimizedLoad') ? config.devOptimizedLoad : true;
   var overrides = config.overrides || {};
 
@@ -27,13 +27,13 @@ define(['module'], function(module) {
 
     var actualPaths = modules.map(function(key) {
       if (!lodashMap.hasOwnProperty(key)) throw new Error('module ' + key + ' is not part of lodash, according to the map. You can add this to the loader override object in the config if you want.');
-      return lodashLocation + '/' + lodashMap[key];
+      return lodashPackageName + '/' + lodashMap[key];
     });
 
     //>>excludeStart('build', true)
     //Only load optimzed if not disabled and if not after build, or during optimization
     if (devOptimizedLoad && !config.isBuild) {
-      req([lodashLocation + '/main'], function(_) {
+      req([lodashPackageName], function(_) {
         onload(_.pick(_, modules)); //use lodash itself to select only the functions we want
       }, onload.error);
       return;

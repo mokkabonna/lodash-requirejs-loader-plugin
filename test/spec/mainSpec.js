@@ -90,17 +90,21 @@ define([
       paths: {
         'bower_components': '../bower_components',
         '_': 'main'
-      }
+      },
+      packages: [{
+        name: 'lodash',
+        location : '../bower_components/lodash'
+      }]
     });
   }
 
   function loadMocked(modString, context) {
     return new Promise(function(resolve, reject) {
       new Squire(context)
-        .mock('bower_components/lodash/collection/map', map)
-        .mock('bower_components/lodash/collection/newMapLocation', newMap)
-        .mock('bower_components/lodash/string/newFeature', fakeLodashModule)
-        .mock('bower_components/lodash/collection/reduce', reduce)
+        .mock('lodash/collection/map', map)
+        .mock('lodash/collection/newMapLocation', newMap)
+        .mock('lodash/string/newFeature', fakeLodashModule)
+        .mock('lodash/collection/reduce', reduce)
         .require([modString], function(customLodash) {
           resolve(customLodash);
         });
@@ -110,7 +114,7 @@ define([
   function loadOptimized(modString, context) {
     return new Promise(function(resolve, reject) {
       new Squire(context)
-        .mock('bower_components/lodash/main', _)
+        .mock('lodash', _)
         .require([modString], function(customLodash) {
           resolve(customLodash);
         });
